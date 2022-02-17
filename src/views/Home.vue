@@ -18,6 +18,7 @@
                 <el-button
                   slot="append"
                   type="primary"
+                  @click="goAbout"
                 >
                   免费使用
                 </el-button>
@@ -196,6 +197,7 @@
               <el-button
                 slot="append"
                 type="primary"
+                @click="goAbout"
               >免费使用</el-button>
             </el-input>
           </div>
@@ -260,7 +262,6 @@ export default {
   },
   methods: {
     goAbout() {
-      console.log(11);
       this.$router.push({ path: "/About" });
     },
   },
